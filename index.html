@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<html lang="es>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base de datos</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Titutlo</h1>
-    <nav>
-        <button>inicio</button>
-<button>iniciar sesion</button>
+  <div class="bubble-window">
+    <div class="bubble-header">
+      <span>Altas</span>
+      <button class="bubble-close">✕</button>
+    </div>
 
-    </nav>
+    <form class="bubble-form">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" placeholder="Escribe el título">
+
+      <label for="genero">Género</label>
+      <input type="text" id="genero" placeholder="Ej: Acción, Drama">
+
+      <label for="duracion">Duración</label>
+      <input type="text" id="duracion" placeholder="Ej: 120 min">
+
+      <div class="bubble-buttons">
+        <button type="submit" class="primary">Guardar</button>
+        <button type="reset" class="secondary">Limpiar formulario</button>
+        <button type="button" class="danger">Cerrar</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
